@@ -7,7 +7,7 @@ import _ from 'lodash';
 var ETHEREUM_CLIENT = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
 
 var peopleContractABI = [{"constant":true,"inputs":[],"name":"getPeople","outputs":[{"name":"","type":"bytes32[]"},{"name":"","type":"bytes32[]"},{"name":"","type":"uint256[]"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_firstname","type":"bytes32"},{"name":"_lastname","type":"bytes32"},{"name":"_age","type":"uint256"}],"name":"addPerson","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"people","outputs":[{"name":"firstName","type":"bytes32"},{"name":"lastName","type":"bytes32"},{"name":"age","type":"uint256"}],"payable":false,"type":"function"}]
-var peopleContractAddress = '0x28279635a7cb225802b9a05d6cc27651e79c2bcc'
+var peopleContractAddress = "<COPY PASTED ADDRESS>"
 var peopleContract = new ETHEREUM_CLIENT.eth.Contract(peopleContractABI,peopleContractAddress)
 
 class App extends Component {
