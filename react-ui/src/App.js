@@ -29,8 +29,6 @@ class App extends Component {
         ages: String(data[2]).split(',')
       });
     }.bind(this))
-
-
   }
 
   render() {

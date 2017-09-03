@@ -39,7 +39,7 @@ Now that the contract is deployed, we need to configure our Web3 client to read 
 
 #### Viewing 
 
-1. In `App.js` change the `peopleContractAddress` to the copied contract address
+1. In `App.js` set the `var peopleContractAddress` to the copied contract address. Line 10.
 1. Go to the react app URL. `http://localhost:3000/`
 2. Notice that the people added to the contract are now being displayed.
 
