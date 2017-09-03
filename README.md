@@ -17,7 +17,7 @@ This contract has the following two methods:
 2. `cd` into the cloned directory.
 3. Compile and migrate the People.sol contract. - `truffle compile && truffle migrate --reset`.
 4. `cd` into the `react-ui` folder.
-5. Start the React app with `npm start`.
+5. Start the React app with `npm install && npm start`.
 
 ### Interacting with the contract:
 
@@ -31,8 +31,15 @@ truffle(development)> People.deployed().then(a => (a.addPerson("Simon","Cheng",2
 ```
 truffle(development)> People.deployed().then(a => (a.addPerson("Jane","Doe",21).then(console.log)))
 ```
+
+#### Configuring the server
+Now that the contract is deployed, we need to configure our Web3 client to read from the proper address. 
+1. In truffle console - `People.deployed()`
+2. Copy the contract address
+
 #### Viewing 
 
+1. In `App.js` change the `peopleContractAddress` to the copied contract address
 1. Go to the react app URL. `http://localhost:3000/`
 2. Notice that the people added to the contract are now being displayed.
 
