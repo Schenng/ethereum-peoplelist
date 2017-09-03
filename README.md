@@ -35,7 +35,7 @@ truffle(development)> People.deployed().then(a => (a.addPerson("Jane","Doe",21).
 #### Configuring the server
 Now that the contract is deployed, we need to configure our Web3 client to read from the proper address. 
 1. In truffle console - `People.deployed()`
-2. Copy the contract address - Ex: `0x28279635a7cb225802b9a05d6cc27651e79c2bcc`
+2. Copy the contract address - Ex: `0x28279635a7cb225802b9a05d6cc27651e79c2bcc` (Sorry this could have been done in the React-UI but...never added it.)
 
 #### Viewing 
 
