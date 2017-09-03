@@ -1,4 +1,4 @@
-javapragma solidity ^0.4.15;
+pragma solidity ^0.4.15;
 contract People {
 	
 	Person[] public people;

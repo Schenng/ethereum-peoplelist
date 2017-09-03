@@ -22,16 +22,12 @@ class App extends Component {
   }
 
   componentWillMount() {
-
-
-    console.log(ETHEREUM_CLIENT)
-
     var data = peopleContract.methods.getPeople().call().then(function(data) {
-        this.setState({
-          firstNames: String(data[0]).split(','),
-          lastNames: String(data[1]).split(','),
-          ages: String(data[2]).split(',')
-        });
+      this.setState({
+        firstNames: String(data[0]).split(','),
+        lastNames: String(data[1]).split(','),
+        ages: String(data[2]).split(',')
+      });
     }.bind(this))
   }
 
